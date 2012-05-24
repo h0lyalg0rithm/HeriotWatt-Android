@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SchoolsActivity!</string>
+    <string name="app_name">Schools</string>
+    <string name="management_languages">Management &amp; Languages</string>
+    <string name="engineering_and_physical_science">Engineering and Physical Science</string>
+    <string name="built_environment">Built Environment</string>
+    <string name="textile_design">Textile &amp; Design</string>
+    <string name="mathematics_computer_science">Mathematics &amp; Computer Science</string>
+    <string name="schools_courses">Schools &amp; Courses</string>
+	<string name="accomodationdetails">The student accommodation on our Dubai Campus comprises safe, secure and comfortable student apartments set in lush, green surroundings, situated close to shops and local amenities.\n\nThe apartments are based in Mirdiff, Etisalat Academy, which is a 15 minute drive from the Heriot-Watt University campus. A bus service is provided to take you to and from the campus. Daily transport to the city centre is also available.\n\nThere is separate accommodation for male and female students, comprising twin-sharing and single rooms. Each room has air conditioning, a telephone, remote-controlled colour television, study table and storage facilities. There are shared pantry facilities, laundry machines and ample parking.\nThe apartments offer common rooms for leisure time, as well as wi-fi and sports facilities, which are available at extra costs.</string>
+    <string name="accomodationtitle">Living &amp; Accomodation</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/schools_courses"
+        android:gravity="center"
+        android:textSize="24dp"/>
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/EPS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/eps"
+        android:gravity="center_vertical"
+        android:text="@string/engineering_and_physical_science"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/BE"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ebs"
+        android:gravity="center_vertical"
+        android:text="@string/built_environment"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/SML"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/sml"
+        android:gravity="center_vertical"
+        android:text="@string/management_languages"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/LS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ls"
+        android:gravity="center_vertical"
+        android:text="Life Sciences"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/td"
+        android:gravity="center_vertical"
+        android:text="@string/textile_design"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/SMCS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/cs"
+        android:gravity="center_vertical"
+        android:text="@string/mathematics_computer_science"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/PE"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/pe"
+        android:gravity="center_vertical"
+        android:text="Institute of Petroleum Engineering"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/EBS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ebs"
+        android:gravity="center_vertical"
+        android:text="Edinburgh Business School"
+        android:textSize="20dp" />
+
+	<TextView
+	    android:id="@+id/DEP"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:background="@drawable/dep"
+	    android:gravity="center_vertical"
+	    android:text="Degree Entry Program"
+	    android:textSize="20dp" />
+
+	</LinearLayout>
+</LinearLayout>

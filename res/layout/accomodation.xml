@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/accomodationtitle"
+	    android:textSize="32dp"/>
+
+	<ScrollView
+	    android:layout_weight="4"
+	    android:id="@+id/scrollView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0px" >
+
+	    <TextView android:id="@+id/accomodationdetails"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:text="@string/accomodationdetails"/>
+	</ScrollView>
+	<Gallery
+	    android:layout_weight="4"
+        android:id="@+id/gallery1"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:gravity="center" />
+
+</LinearLayout>

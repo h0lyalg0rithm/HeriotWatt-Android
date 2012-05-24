@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+	    <Button
+	        android:layout_weight="1"
+	        android:id="@+id/genenq"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:layout_gravity="center"
+	        android:text="General Enquiry" 
+	        android:onClick="general"/>
+		
+	    <Button
+	        android:layout_weight="1"
+	        android:id="@+id/admisreq"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:layout_gravity="center"
+	        android:text="Admissions Enquiry"
+	        android:onClick="admiss" />
+	</LinearLayout>	 <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+	    <Button
+	        android:layout_weight="1"
+	        android:id="@+id/transportenq"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:layout_gravity="center"
+	        android:text="Transport Enquiry"
+	        android:onClick="transport" />
+	
+	    <Button
+	        android:layout_weight="1"
+	        android:id="@+id/Studentenq"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:layout_gravity="center"
+	        android:text="Student Support Enquiry"
+	        android:onClick="support" />
+	</LinearLayout>
+</LinearLayout>

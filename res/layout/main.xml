@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="55dp"
+	    android:background="@drawable/logo" />
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+		
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:orientation="horizontal"
+		    android:layout_weight="2"
+		    android:layout_marginBottom="3dp">
+		    <Button
+		        android:id="@+id/news"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/news"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="3dp"
+		        android:onClick="news"/>
+		    <Button
+		        android:id="@+id/location"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/location"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="3dp" 
+		        android:onClick="location"/>
+		   
+		    <Button
+		        android:id="@+id/website"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/website" 
+		        android:layout_weight="1"
+		        android:layout_marginLeft="3dp"
+		        android:onClick="website"/>
+			
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:orientation="horizontal"
+		    android:layout_weight="2"
+		    android:layout_marginBottom="3dp">
+		     <Button
+		        android:id="@+id/people"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/findpeople" 
+		        android:layout_weight="2"
+		        android:layout_marginRight="3dp"
+		        android:onClick="people"/>
+			
+			<Button
+			    android:id="@+id/schools"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/schools"
+			    android:layout_weight="1" 
+			    android:layout_marginLeft="3dp"
+			    android:onClick="schools"/>
+		</LinearLayout>		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="3dp"
+		    android:layout_weight="2">
+		    <Button
+		        android:id="@+id/living"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/living" 
+		        android:layout_weight="2"
+		        android:layout_marginRight="3dp"
+		        android:onClick="living"/>
+			<Button
+		        android:id="@+id/activities"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/activities"
+		        android:layout_weight="2"
+		        android:onClick="activities" />
+			<Button
+		        android:id="@+id/route"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/transport"
+		        android:layout_weight="2"
+		        android:layout_marginLeft="3dp"
+		        android:onClick="route"/>
+		    
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="bottom"
+		    android:orientation="horizontal" >
+
+		    <Button 
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:background="@drawable/contactus1"
+		        android:layout_weight="1"
+		        android:onClick="callus"/>
+		    <Button 
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:background="@drawable/contactus2"
+		        android:layout_weight="1"
+		        android:onClick="email"/>
+		    <Button 
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:background="@drawable/contactus3"
+		        android:layout_weight="1"
+		        android:id="@+id/maintw"
+		        android:onClick="social"/>
+		    <Button
+		        android:id="@+id/mainfb" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:background="@drawable/contactus4"
+		        android:layout_weight="1"
+		        android:onClick="social"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
