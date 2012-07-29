@@ -1,4 +1,4 @@
-package com.yoarabia;
+package com.yoarabia.heriotwatt;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,7 +46,6 @@ public class EventparseActivity extends Activity {
         setContentView(R.layout.news);
         InternetChecker internet = new InternetChecker();
         if(!internet.isOnline(this)){
-        	Toast.makeText(getApplicationContext(), "Please Connect to the Internet", Toast.LENGTH_SHORT).show();
         	finish();
         }else{
         TextView parsetitle = (TextView)findViewById(R.id.parsetitle);
@@ -57,8 +56,7 @@ public class EventparseActivity extends Activity {
         	request = new HttpGet("http://www.hw.ac.uk/feeds/news.xml?utm_source=rss&utm_medium=subscribe&utm_campaign=news"); 
         	parsetitle.setText("News");
         	
-        }
-        else{
+        }else{
         	request = new HttpGet("http://www.hw.ac.uk/feeds/events.xml?utm_source=rss&utm_medium=subscribe&utm_campaign=events");
         	parsetitle.setText("Events");
         }

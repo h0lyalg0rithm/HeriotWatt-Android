@@ -5,13 +5,17 @@
     android:layout_height="fill_parent"
     android:layout_gravity="center_vertical"
     >
-
+	<TextView 
+	    android:text="Courses"
+	    android:textSize="42dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="0.5dp"
+	    android:gravity="center_horizontal"/>
     <ListView
-        
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="1dp"
         android:id="@+id/listView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

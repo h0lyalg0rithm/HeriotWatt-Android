@@ -1,4 +1,4 @@
-package com.yoarabia;
+package com.yoarabia.heriotwatt;
 
 import android.app.Activity;
 import android.os.Bundle;

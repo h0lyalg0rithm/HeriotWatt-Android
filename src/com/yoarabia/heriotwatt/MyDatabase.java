@@ -1,4 +1,4 @@
-package com.yoarabia;
+package com.yoarabia.heriotwatt;
 
 import android.content.Context;
 import android.database.Cursor;

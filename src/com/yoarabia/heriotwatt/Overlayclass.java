@@ -1,4 +1,4 @@
-package com.yoarabia;
+package com.yoarabia.heriotwatt;
 
 import java.util.ArrayList;
 

@@ -70,10 +70,13 @@ public class swipeAdapter extends PagerAdapter{
 			break;
 		case 1:
 			resid = second;
+			break;
 		case 2:
 			resid = third;
+			break;
 		case 3:
 			resid = fourth;
+			break;
 		case 4:
 			resid = fifth;
 			break;

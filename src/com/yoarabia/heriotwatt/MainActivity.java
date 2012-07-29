@@ -1,17 +1,18 @@
-package com.yoarabia;
+package com.yoarabia.heriotwatt;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.widget.Toast;
 
 import com.yoarabia.moreclasses.swipeAdapter;
 
 
-public class SwipeActivity extends Activity {
+public class MainActivity extends Activity {
     /** Called when the activity is first created. */
     
 
@@ -20,62 +21,60 @@ public class SwipeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewer);
         
-        swipeAdapter swipe = new swipeAdapter(R.layout.main);
+        swipeAdapter swipe = new swipeAdapter(R.layout.main,R.layout.yoarabiaswipe);
         ViewPager pager = (ViewPager)findViewById(R.id.viewpager);
         pager.setAdapter(swipe);
+        pager.setCurrentItem(0);
         
     }
     public void people(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-  	   Intent intent =new Intent(SwipeActivity.this,PeopleActivity.class);
+  	   Intent intent =new Intent(MainActivity.this,PeopleActivity.class);
   	 
   	   startActivity(intent);
      }
     public void website(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
     	
-    	if(!internet.isOnline(this)){
-        	Toast.makeText(getApplicationContext(), "Please Connect to the Internet", Toast.LENGTH_SHORT).show();
-        }else{
-	  	   Intent intent =new Intent(SwipeActivity.this,WebsiteActivity.class);
+    	if(internet.isOnline(this)){
+	  	   Intent intent =new Intent(MainActivity.this,WebsiteActivity.class);
 	  	   startActivity(intent);
         }
      }
     public void news(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-  	   Intent intent =new Intent(SwipeActivity.this,EventparseActivity.class);
+  	   Intent intent =new Intent(MainActivity.this,EventparseActivity.class);
   	   intent.putExtra("url", "1");
   	   startActivity(intent);
      }
     public void route(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-    	if(!internet.isOnline(this)){
-        	Toast.makeText(getApplicationContext(), "Please Connect to the Internet", Toast.LENGTH_SHORT).show();
-        }else{
+    	if(internet.isOnline(this)){
 	  	    Intent intent =new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=25.138136,55.415726"));
 	  	    startActivity(intent);
         }
      }
-    public void schools(View v){
+	@TargetApi(5)
+	public void schools(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-  	   Intent intent =new Intent(SwipeActivity.this,SchoolsActivity.class);
-  	 overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
+  	   Intent intent =new Intent(MainActivity.this,SchoolsActivity.class);
+  	   overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
   	   startActivity(intent);
      }
     public void living(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-  	   Intent intent =new Intent(SwipeActivity.this,AccomodationActivity.class);
+  	   Intent intent =new Intent(MainActivity.this,AccomodationActivity.class);
   	   startActivity(intent);
      }
     public void activities(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-    	 Intent intent =new Intent(SwipeActivity.this,EventparseActivity.class);
+    	 Intent intent =new Intent(MainActivity.this,EventparseActivity.class);
     	 intent.putExtra("url", "0");
   	     startActivity(intent);
      }
     public void location(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-  	   Intent intent =new Intent(SwipeActivity.this,LocationsMapsActivity.class);
+  	   Intent intent =new Intent(MainActivity.this,LocationsMapsActivity.class);
   	   startActivity(intent);
      }
     public void callus(View v){
@@ -106,7 +105,7 @@ public class SwipeActivity extends Activity {
     
     public void social(View v){
   	   //Toast.makeText(v.getContext(), "people", Toast.LENGTH_SHORT).show();
-  	   Intent intent =new Intent(SwipeActivity.this,SocialActivity.class);
+  	   Intent intent =new Intent(MainActivity.this,SocialActivity.class);
   	   if(v.getId()==R.id.maintw){
   		   intent.putExtra("url", "1");
   	   }else{
